@@ -18,12 +18,3 @@ def index():
     # return jsonify({'about': type_of_url}), 201
     return render_template('login.html', cust_name=cust_name)
     # return render_template('index.html', type_of_url=type_of_url, cust_name=cust_name)
-
-
-@app.route('/list', methods=['GET', 'POST'])
-def basic_list():
-    type_of_url = 'jim'
-    cust_name = 'stan'
-    cust_name, sku_list = get_customer()
-    print(sku_list)
-    return render_template('basic_list.html', type_of_url=type_of_url, cust_name=cust_name, sku_list=sku_list)
