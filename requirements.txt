@@ -21,6 +21,6 @@ smartsheet-python-sdk==2.105.1
 SQLAlchemy==1.4.39
 urllib3==1.26.10
 Werkzeug==2.2.0
-xlrd==2.0.1
+xlrd==1.2.0
 XlsxWriter==3.0.3
 zipp==3.8.1

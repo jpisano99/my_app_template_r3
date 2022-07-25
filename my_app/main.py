@@ -16,6 +16,7 @@ def get_customer():
     tools.push_list_to_xls(ss_test_list, 'my_test_sheet.xlsx')
 
     # Try opening an xlsx file from local storage
-    # xws, wb = tools.open_wb('my_test_sheet.xlsx')
+    xws, wb = tools.open_wb('my_test_sheet.xlsx')
+
     return "Stanley", ['a', 'b']
-    return ('Hello from Main.py: I read: '+ str(len(ss_test_list)) + ' rows from SmartSheets',ss_test_list)
+    # return ('Hello from Main.py: I read: '+ str(len(ss_test_list)) + ' rows from SmartSheets',ss_test_list)
